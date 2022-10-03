@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Information de la page -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content=""> <!-- Description du site visible sur la page de moteur de recherche -->
+        <meta name="author" content="Maxime Bory"> <!-- Auteur du site -->
+        <title>Plume d'ours - Portfolio</title> <!-- Titre de la page -->
+        <link rel="icon" type="image/x-icon" href="#"> <!-- Favicon, icone du site, doit être en .ico-->
+        <link rel="stylesheet" type="text/css" href="style.css"> <!-- Permet de lier une feuille de style CSS à la page -->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"> <!-- Importation de police -->
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet"> <!-- Importation de police -->
+    </head>
+
+    <!-- Corps de la page -->
+    <body>
+        <div id="accueil"></div>
+        <!-- Le "header" est l'entête du site : logo, titre -->
+        <header>
+            <a href="#accueil"><img src="img/logo-blc.svg" alt="logo Plume d'ours" height="100px">Plume d'ours</a>
+        </header>
+
+        <!-- Le "nav" est le menu de navigation, comporte généralement des liens -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">A propos</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- La "section" comporte le corps de la page -->
+        <section class="entete">
+            <h1>Le portfolio d'un amateur passionné !</h1>
+        </section>
+        <div id="portfolio"></div><br><br>
+
+        <!-- Contenu de la page, vignette des modals -->
+        <h1 class="titre">----- Mes créations -----</h1>
+
+        <div class="creation">
+
+            <!--    Vignette cliquable -->
+            <div class="vignette" data-toggle="modal" data-target="#pageweb" data-whatever="@mdo"><img src="img/vignette-html.png" alt="bla"></div>
+            <div class="vignette" data-toggle="modal" data-target="#galerie" data-whatever="@mdo"><img src="img/vignette-plumedours-site.png" alt="bla"></div>
+            <div class="vignette" data-toggle="modal" data-target="#sketchup" data-whatever="@mdo"><img src="img/vignette-sketchup.png" alt="bla"></div>
+            <div class="vignette" data-toggle="modal" data-target="#android" data-whatever="@mdo"><img src="img/vignette-android.png" alt="bla"></div>
+            <div class="vignette" data-toggle="modal" data-target="#rpg" data-whatever="@mdo"><img src="img/vignette-rpg.png" alt="bla"></div>
+            <div class="vignette" data-toggle="modal" data-target="#construction" data-whatever="@mdo"><img src="img/vignette-construct.png" alt="bla"></div>
+        </div>
+
+        <!-- Contenu des vignettes -->
+
+        <!-- Vignette de cette page web -->
+        <div class="modal fade bd-example-modal-xl" id="pageweb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">HTML et CSS</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Alors, qu'est-ce donc que cette page ?? Et bien mon portfolio, que j'ai écris à 90% ! En regardant des vidéos, des forums, des tutoriels, j'ai appris seul le <a class="infobulle">HTML et CSS<span>HyperText Markup Language et Cascading Style Sheets, les langages les plus répandu pour la création de page internet</span></a>.</p>
+                    <p>Pourquoi 90% ? Bah je n'arrive pas encore à coder le <a class="infobulle">JavaScript...<span>Permet de faire des pages web interactives.</span></a> Un jour, je prendrai le temps de l'apprendre, mais pour le moment, je me contente de ce que je connais, et je trouve que c'est pas trop mal pour quelqu'un qui a appri ça comme ça :p</p><br>
+                    <p>Alors, pour les pros, forcément, ça doit être simple de faire une page comme celle ci, et probablement qu'elle doit avoir des tonnes d'erreur de code, mais jusqu'à maintenant, elle fonctionne bien ! Mais n'hésitez surtout pas à me contacter si vous rencontrer un problème, que ce soit affichage, lien mort, ou peu importe. Et même vos avis, critique (tant qu'elles restent constructives), tout est bon à prendre !</p>
+                    <p>Pour ceux que ça intéresse, je vais vous donner une petite liste de site internet qui m'ont énormément aidé, tant pour comprendre le langage HTML et CSS que pour la mise en forme.</p><br>
+                    <p>
+                        <ul>
+                            <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>, un éditeur de texte dédié aux langages de développement.</li>
+                            <li><a href="https://developer.mozilla.org/fr/" target="_blank">MDN web docs</a>, énorme base de ressources créée par des développeurs.</li>
+                            <li><a href="https://getbootstrap.com/docs/4.3/components/modal/#varying-modal-content" target="_blank">Bootstrap</a>, un énorme <a class="infobulle">frameworks<span>Pour faire simple, un framework est un fichier prêt à l'emploi qui permet de ne pas tout reprendre à 0 à chaque nouveau projet</span></a> qui m'a permis de réaliser les vignettes "pop-up" (mais il permet de faire tellement plus !).</li>
+                            <li><a href="https://flatuicolors.com/" target="_blank">Flat UI Color</a>, des palettes de couleur pour du <a class="infobulle">flat design<span>interface graphique minimaliste</span></a> qui m'a servi pour les couleurs de la page.</li>
+                            <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a>, comme son nom l'indique, permet de choisir des polices d'écriture.</li>
+                        </ul>
+                    </p><br>
+                    <p>Et il y en a tellement d'autre !</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vignette galerie photo Plume d'ours -->
+        <div class="modal fade bd-example-modal-xl" id="galerie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Ma galerie photo</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Aaaah ! La galerie ! C'est mon bébé !</p>
+                    <p>Passionné par la photographie, j'ai cherché un moyen d'exopsé mes clichés. Et quoi de mieux qu'une galerie sur internet ?</p><br>
+                    <p>C'est en 2011 que j'ai décidé de créer une galerie pour mes photos. Pas par prétention, loin de là, mais plutôt par fierté. J'ai cherché sur le net comment faire, je suis passé par des sites qui permettent de créer son site web (un peu comme Wix, assez connu de nos jour), mais en passant par des "créateurs" de site, on est vite limité.</p>
+                    <p>Alors j'ai continué à chercher un moyen de faire ce que je voulais, et finalement, j'ai pris acheté un nom de domaine ainsi qu'un serveur FTP. Grâce à ça, j'étais libre d'installer ce que je voulais.</p><br>
+                    <p>Et j'ai fini par choisir <a href="https://fr.wordpress.org/">WordPress</a>, un gros gestionnaire de contenu. Il permet de faire tout type de site web, aussi bien des galeries photo (ce que j'ai choisi évidemment), que des site E-commerce, blog, etc... Il y a une très grande communauté autour de <a href="https://fr.wordpress.org/">WordPress</a>, ce qui permet d'avoir accès à une multitude de thèmes, extensions. Et aussi de l'aide !</p><br>
+                    <p>Alors, vous allez me dire "mais du coup, ça se fait tout seul aussi comme site..." Oui et non. <a href="https://fr.wordpress.org/">WordPress</a> est très facile à prendre en main, il possède une interface très claire et permet de faire ce que l'on souhaite assez aisément. Mais on peut TOUT modifier ! Une fois un thème installé, on peut avoir accès à ses fichiers source et les modifier comme bon nous semble.</p>
+                    <p>Et c'est plus ou moins ce que j'ai fait. J'ai essayé des dizaines de thème différent avant de trouver celui qui me convenait le mieux. Mais je vous dis, la bibbliothèque des thèmes est tellement riche, qu'il est impossible de ne pas trouver son bonheur.</p><br>
+                    <p>Alors je suis fiers de vous présenter ma galerie photo ! Vous pouvez y accéder en cliquant sur ce lien : <a href="https://www.plumedours.fr/galerie">Galerie Plume d'ours</a>, ou en cliquant sur le bouton en bas de cette fenêtre.</p>
+                    <p>N'hésitez pas à me contacter pour me faire part de vos impressions, me donner votre avis, vos conseils. Je ne suis pas un professionnel, et tout est bon à prendre pour que je puisse m'améliorer</p><br>
+                    <p>Pour vous présenter rapidement ce que j'utilise, je vais vous lister les appareils et accessoires en vous redirigeant vers les sites avec les descriptions, ça sera plus simple :</p>
+                    <p>
+                        <ul>
+                            <li>L'appareil photo, c'est un <a href="https://www.canon.fr/cameras/eos-77d/">Canon EOS 77D</a>.</li>
+                            <li>Les objectifs, j'en possède 3 actuellement : 
+                                <ul>
+                                    <li><a href="https://www.canon.fr/lenses/ef-s-18-135mm-f3-5-5-6-is-usm/">Canon EF-S 18-135 IS USM</a>, que j'ai pris en même temps que le boitier</li>
+                                    <li><a href="https://www.canon.fr/lenses/ef-100mm-f-2-8l-macro-is-usm-lens/">Canon EF 100mm f/2.8L Macro IS USM</a>, idéal pour la macrophotographie</li>
+                                    <li><a href="https://www.canon.fr/lenses/ef-75-300mm-f-4-5-6-iii-lens/">Canon EF 75-300mm f/4-5.6 III</a>, qui permet de photographier de loin</li>
+                                </ul>
+                            </li>
+                            <li>Un trépied, rien d'exceptionnel mais c'est très utile !</li>
+                            <li>Un déclancheur filaire, idéal pour la pose longue</li>
+                            <li>Deux <a href="https://lensball.com/">LensBall</a>, qui permet de faire de supers effets ! Vous en trouverez dans la galerie</li>
+                        </ul>
+                    </p><br>
+                    <p>Pour la partie post-traitement, j'utilise les logiciels les plus connus, Photoshop et Lightroom, pas besoin de vous les présenter <img src="img/emoji/laugh.svg" alt="" class="emoji">.</p>
+                    <p>Le post-traitement est probablement la partie la plus longue dans la photographie. Le tri, le choix, l'amélioration, tout ça, ça prend énormément de temps. Mais une fois terminé, on est fiers ! <img class="emoji" src="img/emoji/cool.svg" alt=""></p><br>
+                    <p>N'hésitez pas à aller jeter un oeil !</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.plumedours.fr/galerie" target="_blank"><button type="button" class="btn btn-primary">Accéder à la galerie</button></a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vignette des modèles Sketchup -->
+        <div class="modal fade bd-example-modal-xl" id="sketchup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Mes modèles 3D pour Sketchup</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Qu'est-ce que donc que <a href="https://www.sketchup.com/fr" target="_blank">Sketchup</a> ? Et bien c'est un logiciel développé par Trimble pour la modélisation en 3D.</p><br>
+                    <p>J'ai découvert ce logiciel il y a quelques années grâce à l'un de mes anciens patron (Alain, si tu lis ça, merci ! <img src="img/emoji/wink.svg" alt="" class="emoji">)</p>
+                    <p>Ce logiciel permet de dessiner tout ce que l'on veut en 3 dimensions. Utilisé dans beaucoup de domaines, moi je l'utilise principalement pour modéliser des meubles que je souhaite fabriquer. J'ai également dessiné mon apprtement, ça permet de bouger les meubles sans se fatiguer ! <img src="img/emoji/laughing.svg" alt="" class="emoji"></p><br>
+                    <p>Mais des exemples valent mieux que les mots, alors je vous propose de visualiser ce que j'ai modélisé, directement ici, en 3D ! Et si vous possédez Sketchup et que l'un des modèle vous plait, n'hésitez pas à me contacter et je vous donnerai un lien pour le télécharger. Sympa le mec, non ? <img src="img/emoji/cool.svg" alt="" class="emoji"></p><br>
+                    <hr><br>
+                    <p><div class="sketchfab-embed-wrapper">
+                        <iframe title="A 3D model" width="320" height="240" src="https://sketchfab.com/models/226b7af022c24807975b1a0fb68088e8/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                            <a href="https://sketchfab.com/3d-models/meuble-dangle-226b7af022c24807975b1a0fb68088e8?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Meuble d&#39;angle</a>
+                            by <a href="https://sketchfab.com/plumedours?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">plumedours</a>
+                            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                        </p>
+                        </div>
+                        <div class="sketchfab-embed-wrapper">
+                            <iframe title="A 3D model" width="320" height="240" src="https://sketchfab.com/models/25b6462ce43140e9a31e25dee21d4b5d/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                <a href="https://sketchfab.com/3d-models/table-basse-25b6462ce43140e9a31e25dee21d4b5d?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Table basse</a>
+                                by <a href="https://sketchfab.com/plumedours?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">plumedours</a>
+                                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                            </p>
+                        </div>
+                        <div class="sketchfab-embed-wrapper">
+                            <iframe title="A 3D model" width="320" height="240" src="https://sketchfab.com/models/a318917ad7ab4f639d20071444067654/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                <a href="https://sketchfab.com/3d-models/ilot-cuisine-a318917ad7ab4f639d20071444067654?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Ilot cuisine</a>
+                                by <a href="https://sketchfab.com/plumedours?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">plumedours</a>
+                                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                            </p>
+                        </div>
+                    </p><br>
+                    <p>
+                        <div class="sketchfab-embed-wrapper">
+                            <iframe title="A 3D model" width="320" height="240" src="https://sketchfab.com/models/4eade60f73a34444ba3785a7d1022f24/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                <a href="https://sketchfab.com/3d-models/tabouret-de-bar-4eade60f73a34444ba3785a7d1022f24?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Tabouret de bar</a>
+                                by <a href="https://sketchfab.com/plumedours?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">plumedours</a>
+                                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                            </p>
+                        </div>
+                        <div class="sketchfab-embed-wrapper">
+                            <iframe title="A 3D model" width="320" height="240" src="https://sketchfab.com/models/a7b26e1485164b998a0bec36a91f4559/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                <a href="https://sketchfab.com/3d-models/banc-a7b26e1485164b998a0bec36a91f4559?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Banc</a>
+                                by <a href="https://sketchfab.com/plumedours?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">plumedours</a>
+                                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                            </p>
+                        </div>
+                        <div class="sketchfab-embed-wrapper">
+                            <iframe title="A 3D model" width="320" height="240" src="https://sketchfab.com/models/cf4966f23f724668b23605224da41a01/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                <a href="https://sketchfab.com/3d-models/arche-cf4966f23f724668b23605224da41a01?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Arche</a>
+                                by <a href="https://sketchfab.com/plumedours?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">plumedours</a>
+                                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                            </p>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="sketchfab-embed-wrapper">
+                            <iframe title="A 3D model" width="320" height="240" src="https://sketchfab.com/models/8292f0b6375f48d48a8f9189ec99a49b/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                <a href="https://sketchfab.com/3d-models/table-rouge-et-noire-8292f0b6375f48d48a8f9189ec99a49b?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Table rouge et noire</a>
+                                by <a href="https://sketchfab.com/plumedours?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">plumedours</a>
+                                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                            </p>
+                        </div>
+                        <div class="sketchfab-embed-wrapper">
+                            <iframe title="A 3D model" width="320" height="240" src="https://sketchfab.com/models/b35a1ea91037482ba3456739c0f54063/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                <a href="https://sketchfab.com/3d-models/table-b35a1ea91037482ba3456739c0f54063?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Table</a>
+                                by <a href="https://sketchfab.com/plumedours?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">plumedours</a>
+                                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                            </p>
+                        </div>
+                        <div class="sketchfab-embed-wrapper">
+                            <iframe title="A 3D model" width="320" height="240" src="https://sketchfab.com/models/a689c25105a349a289e1f7d4ad892554/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                <a href="https://sketchfab.com/3d-models/commode-a689c25105a349a289e1f7d4ad892554?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Commode</a>
+                                by <a href="https://sketchfab.com/plumedours?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">plumedours</a>
+                                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                            </p>
+                        </div> 
+                        <div class="sketchfab-embed-wrapper">
+                            <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/44623d7441b54c12bb39fb79c4f89212/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                <a href="https://sketchfab.com/3d-models/infinity-cube-44623d7441b54c12bb39fb79c4f89212?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Infinity Cube</a>
+                                by <a href="https://sketchfab.com/plumedours?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">plumedours</a>
+                                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                            </p>
+                        </div>                            
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vignette des applications Android -->
+        <div class="modal fade bd-example-modal-xl" id="android" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Mes applications Android</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Cette section est assez maigre en contenu, mais vous pourrez trouver les applications Android que j'ai créé.</p>
+                    <p>Je m'étais lancé dans la conception d'application mobile, mais j'ai eu énormément de mal à apprendre car c'est très complexe (pour moi en tout cas). Et j'ai encore beaucoup de difficultés à m'en sortir.</p>
+                    <p>Coder de A à Z, j'ai laissé tomber. J'ai en revanche trouvé un site assez sympa qui permet de créer des applications sans avoir à coder. Il m'a permis au moins de comprendre les bases d'une application Android.</p><br>
+                    <p>Ce site est : <a href="https://www.kodular.io/" target="_blank">Kodular !</a> En suivant des tutoriels sur le net, on peut créer des petites applications basiques. Ce que j'ai fait.</p>
+                    <p>Vous pouvez donc, si vous le souhaitez, télécharger mes jeux et applications et les tester sur votre smartphone Andrdoid (pas pour iOS, désolé).</p><br>
+                    <p>La méthode est simple, vous cliquez sur le lien de l'application que vous voulez, vous la téléchargez et vous l'installez ! (il faudra surement activer les sources inconnues pour l'installer, si ce n'est pas déjà fait).</p><br>
+                    <p>Comme dit un peu plus haut, elles sont extrêmement basiques, donc ne vous attendez pas à quelque chose de très évolué, et encore moins utile, car vous pourrez trouver beaucoup mieux sur le PlayStore <img src="img/emoji/laugh.svg" alt="" class="emoji"></p><br>
+                    <p>Vous trouverez également quelques jeux mobiles (que vous pouvez également trouver en version web), réalisés avec le logiciel <a href="https://gdevelop-app.com/fr/" target="_blank">Gdevelop</a>, qui permet de créer des jeux multi-plateforme, et toujours sans avoir à coder.</p>
+                    <p>Voici ce que vous pourrez trouver :</p><br>
+                    <ul>
+                        <li><a href="https://www.plumedours.fr/app/MultiConverter.apk" target="_blank">MultiConverter</a> (app) : comme son nom l'indique, un convertisseur multiple, comme le taux de change, convertisseur de liquide, temps, surface, etc.</li>
+                        <li><a href="https://www.plumedours.fr/app/InfinityCubeCalculator.apk" target="_blank">InfinityCubeCalculator</a> (app) : une application permettant de déterminer la hauteur du cube en indiquant les dimensions des pièces, et vice versa. Cliquez -- <a href="https://www.plumedours.fr/app/pages_infinity/infinitycube.html" target="_blank">ici</a> -- visualiser en 3D ce qu'est un Infinity Cube.</li>
+                        <li><a href="https://www.plumedours.fr/app/Lampe_torche.apk" target="_blank">Lampe torche</a> (app) : tout bêtement, un bouton ON, un bouton OFF, allumer ou éteindre le flash de votre smartphone.</li>
+                        <li><a href="https://www.plumedours.fr/app/Traducteur.apk" target="_blank">Traducteur</a> (app) : vous pouvez soit taper du texte, soit le dicter, et le traduire instantanément en : anglais, italien, espagnol et allemand. Simplement en cliquant sur le drapeau correspondant.</li>
+                        <li><a href="https://www.plumedours.fr/app/memopoke.apk" target="_blank">MéMoPoKé !</a> (jeu) : petit jeu de memory cards, sur le thème de Pokémon. Quelques petits défauts de qualité d'image, couleur, mais rien de méchant, ça fonctionne. Plus d'infos dans la partie Jeux de ma page !</li>
+                        <li><a href="https://www.plumedours.fr/app/flyingmario.apk" target="_blank">Flying Mario</a> (jeu) : un remake de Flappy Bird sur le thème Super Mario ! Passez entre les tuyaux, évitez les canons et allez le plus loin possible !</li>
+                        <li><a href="https://www.plumedours.fr/app/crazyfruit.apk" target="_blank">Crazy Fruit !</a> (jeu) : attrapez le maximum de fruits dans votre panier tout en évitant les bombes.</li>
+                        <li><a href="https://www.plumedours.fr/app/pendu.apk" target="_blank">Pendu !</a> (jeu) : découvrez le mot mystère avant de vous retrouver pendu.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.plumedours.fr/app/MultiConverter.apk" target="_blank"><button type="button" class="btn btn-primary">MultiConverter</button></a>
+                    <a href="https://www.plumedours.fr/app/InfinityCubeCalculator.apk" target="_blank"><button type="button" class="btn btn-primary">InfinityCubeCalculator</button></a>
+                    <a href="https://www.plumedours.fr/app/Lampe_torche.apk" target="_blank"><button type="button" class="btn btn-primary">Lampe torche</button></a>
+                    <a href="https://www.plumedours.fr/app/Traducteur.apk" target="_blank"><button type="button" class="btn btn-primary">Traducteur</button></a>
+                    <a href="https://www.plumedours.fr/app/memopoke.apk" target="_blank"><button type="button" class="btn btn-primary">MéMoPoKé !</button></a>
+                    <a href="https://www.plumedours.fr/app/flyingmario.apk" target="_blank"><button type="button" class="btn btn-primary">Flying Mario</button></a>
+                    <a href="https://www.plumedours.fr/app/crazyfruit.apk" target="_blank"><button type="button" class="btn btn-primary">Crazy Fruit</button></a>
+                    <a href="https://www.plumedours.fr/app/pendu.apk" target="_blank"><button type="button" class="btn btn-primary">Pendu</button></a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vignette jeux RPG Maker -->
+        <div class="modal fade bd-example-modal-xl" id="rpg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Mes créations de jeux vidéos</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Durant ma convalescence, je me suis demandé ce que je pouvais faire... J'ai cherché pas mal de tutoriel pour développer des jeux vidéos, et je suis tombé sur RPG Maker. Un logiciel assez intuitif, mais pas simple à prendre en main.</p>
+                    <p>J'ai donc commencé à regarder des vidéos qui expliquent comment ça marche, mais j'ai également été pas mal aidé par une communauté de "makers" <img src="img/emoji/wink.svg" alt="" class="emoji"></p><br>
+                    <h3>Kammelote</h3><br>
+                    <p>C'est donc avec plaisir que je vous présente une version, disons 1.0, de mon tout premier jeu !</p>
+                    <p>Ce n'est qu'un début, je ne suis pas un pro, alors si vous rencontrez un bug, ou bien une erreur, faute d'orthographe ou même des incohérences graphiques, merci de m'en faire part via le formulaire de contact !</p>
+                    <p>Vous devriez pouvoir y jouer directement depuis votre navigateur web (Chrome, FireFox, etc...), et logiquement depuis votre smartphone. Mais l'idéal est d'utiliser un ordinateur, afin d'avoir une meilleure résolution (je recherche un moyen de faire du plein écran, ou d'adapter aux écrans de smartphone, si vous avez une solution à me proposer...)</p><br>
+                    <p>Très simple d'utilisation, vous pouvez utiliser les flèches de votre clavier pour vous déplacer, la touche "barre d'espace" ou "entrer" pour valider, réaliser une action, la touche "X" ou "echap" pour ouvrir le menu "pause", ou pour annuler, revenir en arrière lorsque vous êtes dans le menu.</p>
+                    <p>Et vous allez vite comprendre l'univers du jeu ! Basé sur une série dont je suis fan, j'ai trouvé assez facilement l'inspiration. Mais pour des raisons de Copyright ou autres droits, l'orthographe du titre a été modifié. J'espère que c'est suffisant, mais quoi qu'il en soit, ce jeu est gratuit, et ne me rapporte absolument rien, donc aucune raison d'avoir des problèmes ! <img src="img/emoji/laughing.svg" alt="" class="emoji"></p><br>
+                    <p>Bien, passons aux choses sérieuses ! Comment y accéder ? Tout simplement en cliquant sur ce lien : <a href="https://www.plumedours.fr/game/kammelote" target="_blank">Play Kammelote</a>, ou en cliquant sur le bouton en bas de cette fenêtre !</p><br>
+                    <h3>Push Push</h3><br>
+                    <p>Voici un autre petit jeu réalisé avec RPG Maker, dans l'esprit de Sokoban, pour ceux qui connaissent.</p>
+                    <p>Rien de bien compliqué, le but du jeu étant de pousser des objets (caisses, pierres, etc.) sur un emplacement précis, sans se retrouver bloqué.</p>
+                    <p>Dans cette version 1.0, il n'y a que le premier monde, c'est à dire les 10 premiers niveaux. La suite est en cours de développement.</p>
+                    <p>Toujours pareil, si vous rencontrez un bub, une faute, ou quelques chose qui ne va pas, contactez moi, ça m'aidera à corriger et améliorer le jeu !</p>
+                    <p>Pour y jouer, cliquez sur ce lien : <a href="https://www.plumedours.fr/game/pushpush" target="_blank">Play PushPush</a>, ou en cliquant sur le bouton en bas de cette fenêtre !</p><br>
+                    <h3>MéMoPoKé</h3><br>
+                    <p>Voici un petit jeu simple de Memory ! Pour ceux qui ne connaissent pas le principe, il faut retourner deux cartes et trouvers les paires. Ce petit jeu dans le monde Pokémon, je l'ai fait pour mon neveu (et oui, c'est sa période Pika Pika !), et développé sur le logiciel <a href="https://gdevelop-app.com/" target="_blank">Gdevelop</a>.</p>
+                    <p>Pour pouvoir jouer, deux solution s'offrent à vous : cliquez sur ce lien : <a href="https://www.plumedours.fr/game/memopoke" target="_blank">MéMoPoKé</a> (ou sur le bouton en bas de la page), ou bien, si vous êtes sur smartphone Android, je l'ai également compilé en APK. Ce qui veut dire que vous pouvez l'installer sur votre smartphone directement. Cliquez sur ce lien pour télécharger le jeu Android : (ou bien rendez-vous dans la partié dédiée aux applications de ma page).</p><br>
+                    <h3>Snake</h3><br>
+                    <p>Un classique ! Le jeu du serpent, qui faisait fureur sur les anciens téléphones portables. Simple à jouer, pour vous déplacer, utilisez les touches fléchées de votre clavier.</p>
+                    <p>Pour accéder au jeu, cliquez sur ce lien : <a href="https://www.plumedours.fr/game/snake" target="_blank">Snake !</a>.</p><br>
+                    <h3>Morpion</h3><br>
+                    <p>Encore un classique, mais plutôt un jeu d'école ! Le Morpion ! Des croix, des ronds, et hop ! Faut être le premier à en aligner 3 !</p>
+                    <p>Il faut être deux pour jouer. Pour y accéder, c'est par ici : <a href="https://www.plumedours.fr/game/morpion" target="_blank">Jeu du Morpion !</a></p><br>
+                    <h3>Flying Mario</h3><br>
+                    <p>Si vous avez aimé le jeu Flappy Bird, alors vous allez aimer Flying MArio ! C'est un remake de Flappy Bird dans l'ambiance Super Mario.</p>
+                    <p>Simple à jouer, si vous êtes sur ordinateur, cliquez pour faire voler Mario, si vous êtes sur smartphone, appuyez simplement sur l'écran pour le faire voler !</p>
+                    <p>Passez entre les tuyaux, éviter les canons et allez le plus loin possible ! Bonne chance !</p>
+                    <p>Pour jouer sur navigateur, c'est ici : <a href="https://www.plumedours.fr/game/FlyingMario" target="_blank">Flying Mario</a>. Et si vous souhaitez l'installer directement sur votre smartphone (uniquement Android), téléchargez le fichier APK ici : <a href="https://wwwplumedours.fr/app/flyingmario.apk" target="_blank">Flying Mario (android)</a></p><br>
+                    <h3>Crazy Fruit</h3><br>
+                    <p>Dans ce jeu, vous devez attraper avec le panier, le maximum de fruits qui tombent du haut de l'écran. Mais attention ! Vous devez éviter les bombes !</p>
+                    <p>Vous avez la possibilité de jouer sur ordinateur, avec la souris. Ou bien directement sur votre smartphone, en cliquant ici : <a href="https://www.plumedours.fr/game/crazyfruit" target="_blank">Crazy Fruit !</a></p>
+                    <p>Deux options de contrôles du panier depuis le smartphone : soit en inclinant votre téléphone, soit en glissant le doigt sur l'écran (vous pouvez choisir le mode dans les options).</p>
+                    <p>Pour ceux qui possèdent un smartphone sous Android, vous avez aussi la possibilité de télécharger le jeu sous forme d'application APK, ici : <a href="https://www.plumedours.fr/app/crazyfruit.apk">Crazy Fruit pour Android</a>.</p><br>
+                    <h3>Pendu</h3><br>
+                    <p>On a tous joué au jeu du pendu étant enfant, et bien le revoilà !</p>
+                    <p>Choisissez un thème et découvrez le mot mystère.</p>
+                    <p>Pour jouer directement sur le web, c'est ici : <a href="https://www.plumedours.fr/game/Pendu" target="_blank">jeu du Pendu !</a>. Et si vous souhaitez l'installer sur votre smartphone Android, vous pouvez télécharger l'application ici : <a href="https://www.plumedours.fr/app/pendu.apk">jeu du Pendu (android)</a>.</p><br>
+                    <p>J'espère que ça vous plaîra, et quand il y aura des "mises à jour", c'est à dire quand j'aurai ajouté de nouvelles quêtes, d'autres niveaux ou même de nouveaux jeux, je vous en informerai via la page <a href="https://www.facebook.com/www.plumedours.fr/" target="_blank">Facebook</a> ! Alors n'hésitez pas à "liker" pour être informé des nouveautés ! Alors, amusez vous bien !</p><br>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.plumedours.fr/game/kammelote" target="_blank"><button type="button" class="btn btn-primary">Play Kammelote !</button></a>
+                    <a href="https://www.plumedours.fr/game/pushpush" target="_blank"><button type="button" class="btn btn-primary">Play PushPush !</button></a>
+                    <a href="https://www.plumedours.fr/game/memopoke" target="_blank"><button type="button" class="btn btn-primary">Play MéMoPoKé !</button></a>
+                    <a href="https://www.plumedours.fr/game/snake" target="_blank"><button type="button" class="btn btn-primary">Play Snake !</button></a>
+                    <a href="https://www.plumedours.fr/game/morpion" target="_blank"><button type="button" class="btn btn-primary">Play Morpion !</button></a>
+                    <a href="https://www.plumedours.fr/game/FlyingMario" target="_blank"><button type="button" class="btn btn-primary">Play Flying Mario !</button></a>
+                    <a href="https://www.plumedours.fr/game/crazyfruit" target="_blank"><button type="button" class="btn btn-primary">Play Crazy Fruit !</button></a>
+                    <a href="https://www.plumedours.fr/game/Pendu" target="_blank"><button type="button" class="btn btn-primary">Play Pendu !</button></a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vignette en cours de construction -->
+        <div class="modal fade bd-example-modal-xl" id="construction" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">En cours de construction</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>En cours de construction !</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="about"></div><br><br>
+
+        <!-- Section A propos -->
+        <section class="bloc_about">
+
+            <hi class="titre">----- A propos -----</hi>
+            <p><img src="img/avataaars.svg" alt="avatar de Max"></p>
+
+            <div class="about">
+                <div>
+                    <h2>- Qui suis-je -</h2>
+                    <p>Je m'appelle Maxime, né en 1988 (je vous laisse calculer suivant en quelle année vous lisez <img src="img/emoji/laughing.svg" alt="" class="emoji">) et je suis menuisier.</p>
+                    <p>Sur le petit avatar au dessus, c'est sensé me représenter... (je me suis rajouté des cheveux, un peu, mais faut pas l'dire <img src="img/emoji/laughing.svg" alt="" class="emoji">)</p><br>
+                    <p>J'ai une passion pour la photographie, d'où la galerie Plume d'ours, mais j'aime bien également ce qui touche à l'informatique. Comme justement apprendre le langage HTML et CSS (pour avoir créé cette page), mais aussi apprendre la modélisation (ce que vous trouverez dans la partie Sketchup).</p><br>
+                    <p>Et tout ceci, j'aime l'apprendre par moi-même, c'est à dire en auto-didacte. Je n'ai jamais pris de cours, que ce soit en photo, langage web ou modélisation, j'ai simplement suivi des tutoriels et des vidéos sur le net. Alors, oui on peut dire que c'est comme suivre des cours, mais ce que je veux dire, c'est que je n'ai pas eu de professeur avec moi pour m'apprendre.</p><br>
+                    <p>J'aime apprendre par moi même, et je m'intéresse à pas mal de chose sur le web, comme le développement d'application (niveau avant les débutants, ça existe ? <img src="img/emoji/laughing.svg" alt="" class="emoji">), ou même dernièrement le langage <a href="https://www.python.org/" target="_blank" class="infobulle">Python<span>Python est un langage de programmation multiplateforme</span></a>.</p><br>
+                    <p>N'hésitez pas à me contacter si vous avez des questions ou des conseils à me donner ! <img src="img/emoji/like.svg" alt="" class="emoji"></p>
+                </div>
+                <div>
+                    <h2>- Pourquoi ce site -</h2>
+                    <p>Pourquoi j'ai créé cette page ? Simplement pour moi un challenge. Pour mettre en pratique ce que j'apprends, et créer une page web de A à Z, franchement, c'est la classe ! <img src="img/emoji/cool.svg" alt="" class="emoji"></p><br>
+                    <p>Et finalement, ce portfolio me permet en même temps de présenter un peu tout ce que je fais, ce que j'aime. Vous pouvez voir mes photos, des petites choses que j'ai créées, etc... Bref, c'est aussi un moyen de partager !</p><br>
+                    <p>Alors peut-être que ça ne va pas intéresser grand monde, mais j'ai le mérite d'avoir réussi, en partie, ce petit projet personnel.</p><br>
+                    <p>Et si vous avez envie de me suivre sur les réseaux sociaux, dirigez vous en bas de la page !</p>
+                </div>
+                <!-- ATTENTION !! Penser à mettre le lien de freepik pour les icones réseaux sociaux, le lien Flaticon pour les smiley -->
+                <div>
+                    <h2>- Les crédits -</h2>
+                    <p>Et oui, parce que quand on utilise des images gratuites, il y a quand même des droits à rescpecter ! Alors c'est ici que je vais indiquer les liens où j'ai trouvé certaines images. Et si je me sens motivé, peut-être que je me formerai un peu sur Illustrator, histoire de créer moi-même mes icones ! <img src="img/emoji/laugh.svg" alt="" class="emoji"></p><br>
+                    <p>Alors, pour commencer, on va parler du plus important. Le logo du site ! Ce logo, c'est une amie très chère qui me l'a créé. Je lui ai donné mes idées, elle avait le nom du site (plume d'ours), et elle m'a offert ce merveilleux logo. Merci Anaïs !</p><br>
+                    <p>Ensuite, il y a ces petits émoticones que vous avez pu voir de temps en temps, comme ça <img src="img/emoji/laugh.svg" alt="" class="emoji"> ou encore celui ci <img src="img/emoji/langue.svg" alt="" class="emoji">. Ces petits smileys, je les ai trouvé sur le site <a href="https://www.flaticon.com/home" target="_blank">FlatIcon</a>. Une banque d'icones assez bien fournie</p><br>
+                    <p>J'ai également trouvé les icones que vous pouvez voir en bas de la page, pour les réseaux sociaux. Eux, ils viennent du site <a href="https://fr.freepik.com/" target="_blank">FreePik</a>, et c'est pareil, c'est une banque d'images et d'icones où on peut trouver facilement ce qu'on veut.</p><br>
+                    <p>Voilà, pour le moment c'est tout. Si je suis amené à utiliser d'autres ressources externes, je rajouterai les crédits ici <img src="img/emoji/smile-1.svg" alt="" class="emoji"></p>
+                </div>
+            </div>
+
+        </section>
+        <div id="contact"></div><br><br>
+        
+        <!-- Contenu de la section Contact -->
+        <section class="contact">
+            
+            <h1 class="titre">----- Contactez moi -----</h1>
+
+            <p>Si vous avez une question, besoin d'une information ou simplement me donner votre avis ou un conseil, c'est par ici que ça se passe.</p><br>
+            <p>Cliquez simplement sur le bouton "Me contacter" ci-dessous, remplissez les champs du formulaire et envoyez ! Je tâcherai de répondre à vos demandes le plus rapidement possible.</p><br>
+            <p style="font-size: small; font-style: italic;">Merci de rester poli et courois.</p>
+
+            <div class="formulaire">
+                <script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script><script type="text/javascript">
+                    var JFL_202366232943049 = new JotformFeedback({
+                      formId: '202366232943049',
+                      base: 'https://form.jotform.com/',
+                      windowTitle: 'Formulaire',
+                      background: '#40739e',
+                      fontColor: '#FFFFFF',
+                      type: 'false',
+                      height: 500,
+                      width: 800,
+                      openOnLoad: false
+                    });
+                </script>
+                  <a class="btn lightbox-202366232943049" style="margin-top: 16px">
+                    Me contacter
+                  </a>
+            </div>
+
+        </section>
+
+        <!-- Section A propos -->
+        <section class="bloc_social">
+
+            <h1 class="titre">----- Réseaux sociaux -----</h1>
+
+            <div class="social">
+                <div><a href="https://www.facebook.com/www.plumedours.fr/" target="_blank"><img src="img/icon/facebook.svg" alt="logo_facebook"></a></div>
+                <div><a href="https://www.instagram.com/plumedours.fr/" target="_blank"><img src="img/icon/instagram.svg" alt="logo_instagram"></a></div>
+                <div><a href="https://www.pinterest.fr/plume_dours/" target="_blank"><img src="img/icon/pinterest.svg" alt="logo_pinterest"></a></div>
+                <div><a href="https://www.paypal.me/MaximeBory/10" target="_blank"><img src="img/icon/paypal.svg" alt="logo_paypal"></a></div>
+            </div>
+
+        </section>
+
+        <!-- Contenu du pied de page -->
+        <footer>
+            <p>&copy; 2020 - Bory Maxime - Tous droits réservés</p>
+        </footer>
+       
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
